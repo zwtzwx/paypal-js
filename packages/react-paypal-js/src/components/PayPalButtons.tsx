@@ -137,11 +137,11 @@ export const PayPalButtons: FunctionComponent<PayPalButtonsComponentProps> = ({
         }
 
         if (disabled === true) {
-            initActions.disable().catch(() => {
+            initActions.disable()?.catch(() => {
                 // ignore errors when disabling the component
             });
         } else {
-            initActions.enable().catch(() => {
+            initActions.enable()?.catch(() => {
                 // ignore errors when enabling the component
             });
         }
