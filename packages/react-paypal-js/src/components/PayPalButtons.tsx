@@ -132,7 +132,7 @@ export const PayPalButtons: FunctionComponent<PayPalButtonsComponentProps> = ({
 
     // useEffect hook for managing disabled state
     useEffect(() => {
-        if (initActions === null) {
+        if (initActions === null || initActions === undefined) {
             return;
         }
 
